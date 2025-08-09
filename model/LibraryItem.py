@@ -5,7 +5,7 @@ class LibraryItem(ABC):
         self.author = author
 
     def display_info(self):
-        print(f"Title :{self.title}, Author: {self.author}")
+        print(f"Title :{self.title} | Author: {self.author} | ")
     @abstractmethod
     def check_availability(self):
         pass

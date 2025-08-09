@@ -1,4 +1,4 @@
-from LibraryItem import LibraryItem
+from model.LibraryItem import LibraryItem
 class Book(LibraryItem):
     def __init__(self, title, author, book_id, available=True):
         super().__init__(title, author)
@@ -7,6 +7,7 @@ class Book(LibraryItem):
 
     def display_info(self):
         super().display_info()
-        print(f"Book ID: {self.book_id}")
+        status = "Available" if self.available else "Not Available"
+        print(f"Book ID: {self.book_id} | Status: {status}")
     def check_availability(self):
         return self.available

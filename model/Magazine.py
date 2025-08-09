@@ -1,4 +1,4 @@
-from LibraryItem import LibraryItem
+from model.LibraryItem import LibraryItem
 
 class Magazine(LibraryItem):
     def __init__(self, title, author, magazine_id, available=True):
@@ -8,7 +8,8 @@ class Magazine(LibraryItem):
 
     def display_info(self):
         super().display_info()
-        print(f"Magazine ID: {self.magazine_id}")
+        status="Available" if self.available else "Not Available"
+        print(f"Magazine ID: {self.magazine_id} | Status: {status} ")
 
     def check_availability(self):
         return self.available
