@@ -1,0 +1,26 @@
+[
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "book_id": 1,
+        "available": true
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "book_id": 2,
+        "available": true
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "book_id": 3,
+        "available": true
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "book_id": 4,
+        "available": false
+    }
+]
